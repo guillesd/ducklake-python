@@ -292,8 +292,6 @@ class DucklakeClient:
             if df.delete_file_path:
                 delete_path = self._resolve_path(df.delete_file_path, df.path_is_relative, table_name, schema_name)
                 delete_row_ids = self._read_delete_row_ids(delete_path)
-                print(delete_row_ids)
-                print(table)
                 
                 # Filter out deleted rows (by position)
                 # This feels super flaky and it is based on the assumption that order is kept
