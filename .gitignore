@@ -6,6 +6,7 @@ dist/
 wheels/
 *.egg-info
 debug/
+examples/tmp
 
 # Virtual environments
 .venv
